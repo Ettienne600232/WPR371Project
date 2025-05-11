@@ -1,13 +1,15 @@
 <!-- views/pages/about.ejs -->
 <%- include('../partials/header') %>
 <h1>About us</h1>
-<p>Welcome to our portal. Meet our amazing team:</p>
+<div class="Welcome-message">
+  <p>Welcome to our portal. Meet our amazing team:</p>
 
-<ul>
-  <% if (team && team.length > 0) { %> <% team.forEach(member => { %>
-  <li><strong><%= member.name %></strong> – <%= member.role %></li>
-  <% }) %> <% } else { %>
-  <li>No team data available.</li>
-  <% } %>
-</ul>
-<%- include('../partials/footer') %>
+  <ul>
+    <% if (team && team.length > 0) { %> <% team.forEach(member => { %>
+    <li><%= member.name %> – <%= member.role %></li>
+    <% }) %> <% } else { %>
+    <li>No team data available.</li>
+    <% } %>
+  </ul>
+  <%- include('../partials/footer') %>
+</div>

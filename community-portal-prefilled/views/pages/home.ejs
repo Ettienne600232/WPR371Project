@@ -1,3 +1,23 @@
 <%- include('../partials/header') %>
-<h1>Welcome to the Community Portal</h1>
+<div class="container">
+  <div class="welcome-message">
+    <h2>Welcome to the Community Portal!</h2>
+  </div>
+  <section class="events-list">
+    <p>Upcoming Events:</p>
+    <ul>
+      <% events.forEach(event => { %>
+      <li>
+        <img
+          src="<%= event.image %>"
+          alt="<%= event.title %>"
+          class="event-image"
+        />
+        <strong><%= event.title %></strong> - <%= event.date %> at <%=
+        event.location %>
+      </li>
+      <% }) %>
+    </ul>
+  </section>
+</div>
 <%- include('../partials/footer') %>
