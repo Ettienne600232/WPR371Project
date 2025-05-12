@@ -1,10 +1,14 @@
 <%- include('../partials/header') %>
+
 <div class="container">
   <div class="welcome-message">
     <h2>Welcome to the Community Portal!</h2>
   </div>
+
   <section class="events-list">
-    <p class="upcoming">Upcoming Events:</p>
+    <p class="upcoming">Events to look forward too!</p>
+
+    <% if (events.length > 0) { %>
     <ul>
       <% events.forEach(event => { %>
       <li>
@@ -13,11 +17,44 @@
           alt="<%= event.title %>"
           class="event-image"
         />
-        <strong><%= event.title %></strong> - <%= event.date %> at <%=
-        event.location %>
+        <strong><%= event.title %></strong>
       </li>
       <% }) %>
     </ul>
+    <% } else { %>
+    <p class="coming-soon">
+      No events are currently scheduled. Check back soon!
+    </p>
+    <% } %>
   </section>
+
+  <div class="futere-events">
+    <p>Futere Events</p>
+  </div>
+  <div class="event-row">
+    <div class="future-box">Events Pending</div>
+    <div class="future-box">Events Pending</div>
+    <div class="future-box">Events Pending</div>
+  </div>
 </div>
+
+<div class="fact-box">
+  <button id="toggleFact">Did You Know?</button>
+  <div id="factContent" class="hidden">
+    <p>
+      Our community portal was built using Node.js and Express.js. Stay tuned
+      for more features!
+    </p>
+  </div>
+</div>
+
 <%- include('../partials/footer') %>
+
+<script>
+  const toggleBtn = document.getElementById("toggleFact");
+  const factBox = document.getElementById("factContent");
+
+  toggleBtn.addEventListener("click", () => {
+    factBox.classList.toggle("hidden");
+  });
+</script>

@@ -88,13 +88,92 @@ body {
   background-size: cover;
   background-position: center;
 }
+.futere-events {
+  margin: auto;
+  width: 40%;
+  border: 3px solid #73ad21;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 25px;
+}
+.futere-events p {
+  text-align: center;
+  font-size: large;
+}
+.event-row {
+  margin-top: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.future-box {
+  flex: 1 1 30%;
+  background-color: #e0f7fa;
+  padding: 16px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 5px black;
+}
+
+.fact-box {
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.fact-box button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.fact-box button:hover {
+  margin-top: 32px;
+  background-color: #005fa3;
+}
+
+#factContent {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  display: none;
+}
+
+#factContent.hidden {
+  display: none;
+}
+
+#factContent:not(.hidden) {
+  display: block;
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 footer {
   background-image: radial-gradient(circle, #4d935f 0%, #00d4ff 100%);
   text-align: center;
   padding: 20px;
   font-size: 16px;
 }
-.about-us{
+
+/*.about-us{
   background-color: #f4f4f4;
   flex: 1;
   text-align: center;
@@ -112,3 +191,4 @@ footer {
   font-size: x-large;
   animation: colorChange 5s infinite;
 }
+*/
