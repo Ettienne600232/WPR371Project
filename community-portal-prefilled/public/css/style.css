@@ -94,3 +94,21 @@ footer {
   padding: 20px;
   font-size: 16px;
 }
+.about-us{
+  background-color: #f4f4f4;
+  flex: 1;
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+.thank-you{
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+.thank-you h1{
+  font-size: x-large;
+  animation: colorChange 5s infinite;
+}
