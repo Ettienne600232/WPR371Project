@@ -26,7 +26,7 @@ module.exports = [
   {
     name: "Lethabo Kimberleigh Khobo",
     role: "Documentation",
-    image: "/images/Lethabo Kimberleigh Khobo.jpg",
+    image: "/images/Letabo.jpg",
     bio: "",
     email: "jane@example.com",
     phone: "123-456-7890",
