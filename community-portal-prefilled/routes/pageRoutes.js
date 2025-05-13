@@ -26,7 +26,13 @@ router.get("/contact", (req, res) => {
 
 router.post("/contact", (req, res) => {
   const { name, email, message } = req.body;
-  contacts.push({ name, email, message });
+  if (!name || !email || !message) {
+    return res.status(400).send("All fields are required.");
+  }
+  const id = Date.now(); // to generate id
+  contacts.push({ id, name, email, message });
+
+  console.log("Contact saved:", { id, name, email, message });
   res.redirect("/thankyou");
 });
 
