@@ -83,7 +83,7 @@ body {
   font-size: 24px;
 }
 .events-list li:hover {
-  background-image: radial-gradient(circle, #4d935f 0%, #00d4ff 100%);
+  background-image: radial-gradient(circle, #4d935f 0%, #7b7c7c 100%);
   color: black;
 }
 .events-list ul {
@@ -120,6 +120,7 @@ body {
   margin-top: 20px;
   padding: 10px;
   border-radius: 25px;
+  background-color: #73ad21;
 }
 .futere-events p {
   text-align: center;
@@ -228,6 +229,59 @@ body {
 
 .show-info .member-info {
   display: block;
+}
+
+#container-form {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border: 2px solid white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px black;
+}
+
+.contactForm .form-group {
+  margin-bottom: 20px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.contactForm textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contactForm button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactForm button:hover {
+  background-color: #3a78c2;
 }
 
 footer {
