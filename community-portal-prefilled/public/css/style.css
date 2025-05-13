@@ -305,3 +305,39 @@ footer {
   font-size: 16px;
   color: white;
 }
+
+.pulse {
+  width: 40%;
+  height: 50%;
+  border-radius: 5%;
+  background-color: #c3dced;
+  position: relative;
+  animation: pulse 2s infinite;
+  margin: auto;
+  padding: 10px;
+}
+
+
+
+@keyframes pulse {
+  0% {
+    transfornm: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.thankYounIcon {
+  width: 20%;
+  height: 50%
+}
+
+.shadow {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
