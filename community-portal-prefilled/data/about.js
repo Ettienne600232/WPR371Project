@@ -25,8 +25,8 @@ module.exports = [
   },
   {
     name: "Lethabo Kimberleigh Khobo",
-    role: "Documentation",
-    image: "/images/Letabo.jpg",
+    role: "Frontend Developer & Documentation",
+    image: "/images/Lethabo.jpg",
     bio: "",
     email: "jane@example.com",
     phone: "123-456-7890",
