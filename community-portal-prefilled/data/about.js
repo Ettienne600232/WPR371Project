@@ -2,7 +2,7 @@ module.exports = [
   {
     name: "Ettienne Janse Van Vuuren",
     role: "Programmer",
-    image: "",
+    image: "/images/Ettienne.jpg",
     bio: "I'm a passionate programmer who enjoys solving problems and building useful, user-friendly applications.I'm always looking to learn and improve. Whether working solo or on a team, I focus on writing clean, efficient code and creating software that makes a difference.",
     email: "jane@example.com",
     phone: "123-456-7890",
@@ -18,7 +18,7 @@ module.exports = [
   {
     name: "Lesedi Mmathapelo Sedibe",
     role: "Designer",
-    image: "",
+    image: "/images/lesedi.jpg",
     bio: "",
     email: "jane@example.com",
     phone: "123-456-7890",

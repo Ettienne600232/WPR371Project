@@ -6,9 +6,11 @@
   </div>
 
   <section class="events-list">
-    <p class="upcoming">Events to look forward too!</p>
+    <div class="portal-message">
+      <p>Events to look forward too!</p>
+    </div>
 
-    ``` <% if (events.length > 0) { %>
+    <% if (events.length > 0) { %>
     <ul>
       <% events.forEach(event => { %>
       <li>
@@ -25,7 +27,7 @@
     <p class="coming-soon">
       No events are currently scheduled. Check back soon!
     </p>
-    <% } %> ```
+    <% } %>
   </section>
 
   <div class="futere-events">
