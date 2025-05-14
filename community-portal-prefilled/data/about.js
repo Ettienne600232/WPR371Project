@@ -11,7 +11,7 @@ module.exports = [
     name: "Michael Ricahrd Lan Mon",
     role: "Data-Handler",
     image: "/images/Michael Ricahrd Lan Mon.jpg",
-    bio: "",
+    bio: "A data handler who is passionate about gathering, processing, and evaluating data to find important patterns. Competent in using programs like Excel and SQL for basic data entry, cleaning, and validation. I am eager to pick up and use new data management and visualisation skills. Dependable, meticulous, and dedicated to protecting the confidentiality and accuracy of data. I'm eager to advance in the industry and support data-driven choices.",
     email: "jane@example.com",
     phone: "123-456-7890",
   },
