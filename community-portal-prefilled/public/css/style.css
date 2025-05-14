@@ -93,7 +93,28 @@ body {
   padding: 0;
   list-style-type: none;
 }
+.event-description-box {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #ffffffcc;
+  border: 2px solid #4d935f;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px black;
+  color: #333;
+}
 
+.event-description-box h3 {
+  text-align: center;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.event-description-box p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
 .events-list li {
   background: #f9f9f9;
   padding: 16px;
@@ -317,8 +338,6 @@ footer {
   padding: 10px;
 }
 
-
-
 @keyframes pulse {
   0% {
     transfornm: scale(1);
@@ -335,9 +354,9 @@ footer {
 
 .thankYounIcon {
   width: 20%;
-  height: 50%
+  height: 50%;
 }
 
 .shadow {
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 black, 0 6px 20px 0;
 }

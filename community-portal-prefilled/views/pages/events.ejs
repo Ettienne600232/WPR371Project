@@ -1,6 +1,38 @@
 <%- include('../partials/header') %>
+
 <div class="container">
-  <h1>Upcoming Events</h1>
-  <p>Check out what's happening soon!</p>
+  <div class="welcome-message">
+    <h2>Events</h2>
+  </div>
+
+  <section class="events-list">
+    <% if (events.length > 0) { %>
+    <ul>
+      <% events.forEach(event => { %>
+      <li class="team-member">
+        <img
+          src="<%= event.image %>"
+          alt="<%= event.title %>"
+          class="event-image"
+        />
+        <h3><%= event.title %> – <%= event.date %></h3>
+        <p><strong>Location:</strong> <%= event.location %></p>
+      </li>
+      <% }) %>
+    </ul>
+    <% } else { %>
+    <p>No events currently scheduled. Check back later!</p>
+    <% } %>
+  </section>
+  <div class="event-description-box">
+    <h3>About Our Events</h3>
+    <p>
+      Our community events are designed to bring people together through shared
+      interests, learning, and collaboration. Whether it's a local meetup, a
+      workshop, or a festival, there's always something exciting coming up. Stay
+      tuned and join us!
+    </p>
+  </div>
 </div>
+
 <%- include('../partials/footer') %>
